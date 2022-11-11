@@ -20,6 +20,7 @@ function getListings(urlParam) {
     url = urlParam;
   } else {
     url = `https://api.listhub.com/odata/Property?$filter=ModificationTimestamp gt '${date.toISOString()}'&$count=true`;
+    console.log(url)
   }
   (async () => {
     try {
