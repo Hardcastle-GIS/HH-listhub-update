@@ -620,17 +620,17 @@ function writeData(response) {
                         ],
                       };
                       // Create the promise and SES service object
-                      var sendPromise = new AWS.SES({ apiVersion: "2010-12-01" })
-                        .sendEmail(params)
-                        .promise();
-                      // Handle promise's fulfilled/rejected states
-                      sendPromise
-                        .then(function (data) {
-                          console.log(data.MessageId);
-                        })
-                        .catch(function (err) {
-                          console.error(err, err.stack);
-                        });
+                      // var sendPromise = new AWS.SES({ apiVersion: "2010-12-01" })
+                      //   .sendEmail(params)
+                      //   .promise();
+                      // // Handle promise's fulfilled/rejected states
+                      // sendPromise
+                      //   .then(function (data) {
+                      //     console.log(data.MessageId);
+                      //   })
+                      //   .catch(function (err) {
+                      //     console.error(err, err.stack);
+                      //   });
                     }
                   }
                 );
@@ -980,17 +980,17 @@ function writeData(response) {
                         ],
                       };
                       // Create the promise and SES service object
-                      var sendPromise = new AWS.SES({ apiVersion: "2010-12-01" })
-                        .sendEmail(params)
-                        .promise();
-                      // Handle promise's fulfilled/rejected states
-                      sendPromise
-                        .then(function (data) {
-                          console.log(data.MessageId);
-                        })
-                        .catch(function (err) {
-                          console.error(err, err.stack);
-                        });
+                      // var sendPromise = new AWS.SES({ apiVersion: "2010-12-01" })
+                      //   .sendEmail(params)
+                      //   .promise();
+                      // // Handle promise's fulfilled/rejected states
+                      // sendPromise
+                      //   .then(function (data) {
+                      //     console.log(data.MessageId);
+                      //   })
+                      //   .catch(function (err) {
+                      //     console.error(err, err.stack);
+                      //   });
 
                       //Mail about the property to all the agent in the postalcode
                       client.query(`Select listagentemail, listagentfullname from listings where listbrokeragepostalcode = '${brokeragePostalCode}';`,
@@ -1357,17 +1357,17 @@ function writeData(response) {
                                 ],
                               };
                               // Create the promise and SES service object
-                              var sendPromise = new AWS.SES({ apiVersion: "2010-12-01" })
-                                .sendEmail(params)
-                                .promise();
-                              // Handle promise's fulfilled/rejected states
-                              sendPromise
-                                .then(function (data) {
-                                  console.log(data.MessageId);
-                                })
-                                .catch(function (err) {
-                                  console.error(err, err.stack);
-                                });
+                              // var sendPromise = new AWS.SES({ apiVersion: "2010-12-01" })
+                              //   .sendEmail(params)
+                              //   .promise();
+                              // // Handle promise's fulfilled/rejected states
+                              // sendPromise
+                              //   .then(function (data) {
+                              //     console.log(data.MessageId);
+                              //   })
+                              //   .catch(function (err) {
+                              //     console.error(err, err.stack);
+                              //   });
                             }
                           }
                         })
@@ -1698,17 +1698,17 @@ function writeData(response) {
                         ],
                       };
                       // Create the promise and SES service object
-                      var sendPromise = new AWS.SES({ apiVersion: "2010-12-01" })
-                        .sendEmail(params)
-                        .promise();
-                      // Handle promise's fulfilled/rejected states
-                      sendPromise
-                        .then(function (data) {
-                          console.log(data.MessageId);
-                        })
-                        .catch(function (err) {
-                          console.error(err, err.stack);
-                        });
+                      // var sendPromise = new AWS.SES({ apiVersion: "2010-12-01" })
+                      //   .sendEmail(params)
+                      //   .promise();
+                      // // Handle promise's fulfilled/rejected states
+                      // sendPromise
+                      //   .then(function (data) {
+                      //     console.log(data.MessageId);
+                      //   })
+                      //   .catch(function (err) {
+                      //     console.error(err, err.stack);
+                      //   });
 
                       client.query(`Select listagentemail, listagentfullname from listings where listbrokeragepostalcode = '${brokeragePostalCode}';`,
                         (err, result) => {
@@ -2073,17 +2073,17 @@ function writeData(response) {
                                 ],
                               };
                               // Create the promise and SES service object
-                              var sendPromise = new AWS.SES({ apiVersion: "2010-12-01" })
-                                .sendEmail(params)
-                                .promise();
-                              // Handle promise's fulfilled/rejected states
-                              sendPromise
-                                .then(function (data) {
-                                  console.log(data.MessageId);
-                                })
-                                .catch(function (err) {
-                                  console.error(err, err.stack);
-                                });
+                              // var sendPromise = new AWS.SES({ apiVersion: "2010-12-01" })
+                              //   .sendEmail(params)
+                              //   .promise();
+                              // // Handle promise's fulfilled/rejected states
+                              // sendPromise
+                              //   .then(function (data) {
+                              //     console.log(data.MessageId);
+                              //   })
+                              //   .catch(function (err) {
+                              //     console.error(err, err.stack);
+                              //   });
                             }
                           }
                         })
@@ -2361,17 +2361,17 @@ function writeData(response) {
                         ],
                       };
                       // Create the promise and SES service object
-                      var sendPromise = new AWS.SES({ apiVersion: "2010-12-01" })
-                        .sendEmail(params)
-                        .promise();
-                      // Handle promise's fulfilled/rejected states
-                      sendPromise
-                        .then(function (data) {
-                          console.log(data.MessageId);
-                        })
-                        .catch(function (err) {
-                          console.error(err, err.stack);
-                        });
+                      // var sendPromise = new AWS.SES({ apiVersion: "2010-12-01" })
+                      //   .sendEmail(params)
+                      //   .promise();
+                      // // Handle promise's fulfilled/rejected states
+                      // sendPromise
+                      //   .then(function (data) {
+                      //     console.log(data.MessageId);
+                      //   })
+                      //   .catch(function (err) {
+                      //     console.error(err, err.stack);
+                      //   });
                       client.query(`Select listagentemail, listagentfullname from listings where listbrokeragepostalcode = '${brokeragePostalCode}';`,
                         (err, result) => {
                           if (err) {
@@ -2735,17 +2735,17 @@ function writeData(response) {
                                 ],
                               };
                               // Create the promise and SES service object
-                              var sendPromise = new AWS.SES({ apiVersion: "2010-12-01" })
-                                .sendEmail(params)
-                                .promise();
-                              // Handle promise's fulfilled/rejected states
-                              sendPromise
-                                .then(function (data) {
-                                  console.log(data.MessageId);
-                                })
-                                .catch(function (err) {
-                                  console.error(err, err.stack);
-                                });
+                              // var sendPromise = new AWS.SES({ apiVersion: "2010-12-01" })
+                              //   .sendEmail(params)
+                              //   .promise();
+                              // // Handle promise's fulfilled/rejected states
+                              // sendPromise
+                              //   .then(function (data) {
+                              //     console.log(data.MessageId);
+                              //   })
+                              //   .catch(function (err) {
+                              //     console.error(err, err.stack);
+                              //   });
                             }
                           }
                         })
@@ -3288,17 +3288,17 @@ function writeData(response) {
                         ],
                       };
                       // Create the promise and SES service object
-                      var sendPromise = new AWS.SES({ apiVersion: "2010-12-01" })
-                        .sendEmail(params)
-                        .promise();
-                      // Handle promise's fulfilled/rejected states
-                      sendPromise
-                        .then(function (data) {
-                          console.log(data.MessageId);
-                        })
-                        .catch(function (err) {
-                          console.error(err, err.stack);
-                        });
+                      // var sendPromise = new AWS.SES({ apiVersion: "2010-12-01" })
+                      //   .sendEmail(params)
+                      //   .promise();
+                      // // Handle promise's fulfilled/rejected states
+                      // sendPromise
+                      //   .then(function (data) {
+                      //     console.log(data.MessageId);
+                      //   })
+                      //   .catch(function (err) {
+                      //     console.error(err, err.stack);
+                      //   });
                     }
                   }
                 );
@@ -3646,17 +3646,17 @@ function writeData(response) {
                         ],
                       };
                       // Create the promise and SES service object
-                      var sendPromise = new AWS.SES({ apiVersion: "2010-12-01" })
-                        .sendEmail(params)
-                        .promise();
-                      // Handle promise's fulfilled/rejected states
-                      sendPromise
-                        .then(function (data) {
-                          console.log(data.MessageId);
-                        })
-                        .catch(function (err) {
-                          console.error(err, err.stack);
-                        });
+                      // var sendPromise = new AWS.SES({ apiVersion: "2010-12-01" })
+                      //   .sendEmail(params)
+                      //   .promise();
+                      // // Handle promise's fulfilled/rejected states
+                      // sendPromise
+                      //   .then(function (data) {
+                      //     console.log(data.MessageId);
+                      //   })
+                      //   .catch(function (err) {
+                      //     console.error(err, err.stack);
+                      //   });
 
                       client.query(`Select listagentemail, listagentfullname from listings where listbrokeragepostalcode = '${brokeragePostalCode}';`,
                         (err, result) => {
@@ -4022,17 +4022,17 @@ function writeData(response) {
                                 ],
                               };
                               // Create the promise and SES service object
-                              var sendPromise = new AWS.SES({ apiVersion: "2010-12-01" })
-                                .sendEmail(params)
-                                .promise();
-                              // Handle promise's fulfilled/rejected states
-                              sendPromise
-                                .then(function (data) {
-                                  console.log(data.MessageId);
-                                })
-                                .catch(function (err) {
-                                  console.error(err, err.stack);
-                                });
+                              // var sendPromise = new AWS.SES({ apiVersion: "2010-12-01" })
+                              //   .sendEmail(params)
+                              //   .promise();
+                              // // Handle promise's fulfilled/rejected states
+                              // sendPromise
+                              //   .then(function (data) {
+                              //     console.log(data.MessageId);
+                              //   })
+                              //   .catch(function (err) {
+                              //     console.error(err, err.stack);
+                              //   });
                             }
                           }
                         })
@@ -4362,17 +4362,17 @@ function writeData(response) {
                         ],
                       };
                       // Create the promise and SES service object
-                      var sendPromise = new AWS.SES({ apiVersion: "2010-12-01" })
-                        .sendEmail(params)
-                        .promise();
-                      // Handle promise's fulfilled/rejected states
-                      sendPromise
-                        .then(function (data) {
-                          console.log(data.MessageId);
-                        })
-                        .catch(function (err) {
-                          console.error(err, err.stack);
-                        });
+                      // var sendPromise = new AWS.SES({ apiVersion: "2010-12-01" })
+                      //   .sendEmail(params)
+                      //   .promise();
+                      // // Handle promise's fulfilled/rejected states
+                      // sendPromise
+                      //   .then(function (data) {
+                      //     console.log(data.MessageId);
+                      //   })
+                      //   .catch(function (err) {
+                      //     console.error(err, err.stack);
+                      //   });
 
                       client.query(`Select listagentemail, listagentfullname from listings where listbrokeragepostalcode = '${brokeragePostalCode}';`,
                         (err, result) => {
@@ -4737,17 +4737,17 @@ function writeData(response) {
                                 ],
                               };
                               // Create the promise and SES service object
-                              var sendPromise = new AWS.SES({ apiVersion: "2010-12-01" })
-                                .sendEmail(params)
-                                .promise();
-                              // Handle promise's fulfilled/rejected states
-                              sendPromise
-                                .then(function (data) {
-                                  console.log(data.MessageId);
-                                })
-                                .catch(function (err) {
-                                  console.error(err, err.stack);
-                                });
+                              // var sendPromise = new AWS.SES({ apiVersion: "2010-12-01" })
+                              //   .sendEmail(params)
+                              //   .promise();
+                              // // Handle promise's fulfilled/rejected states
+                              // sendPromise
+                              //   .then(function (data) {
+                              //     console.log(data.MessageId);
+                              //   })
+                              //   .catch(function (err) {
+                              //     console.error(err, err.stack);
+                              //   });
                             }
                           }
                         })
@@ -5025,17 +5025,17 @@ function writeData(response) {
                         ],
                       };
                       // Create the promise and SES service object
-                      var sendPromise = new AWS.SES({ apiVersion: "2010-12-01" })
-                        .sendEmail(params)
-                        .promise();
-                      // Handle promise's fulfilled/rejected states
-                      sendPromise
-                        .then(function (data) {
-                          console.log(data.MessageId);
-                        })
-                        .catch(function (err) {
-                          console.error(err, err.stack);
-                        });
+                      // var sendPromise = new AWS.SES({ apiVersion: "2010-12-01" })
+                      //   .sendEmail(params)
+                      //   .promise();
+                      // // Handle promise's fulfilled/rejected states
+                      // sendPromise
+                      //   .then(function (data) {
+                      //     console.log(data.MessageId);
+                      //   })
+                      //   .catch(function (err) {
+                      //     console.error(err, err.stack);
+                      //   });
 
                       client.query(`Select listagentemail, listagentfullname from listings where listbrokeragepostalcode = '${brokeragePostalCode}';`,
                         (err, result) => {
@@ -5401,17 +5401,17 @@ function writeData(response) {
                                 ],
                               };
                               // Create the promise and SES service object
-                              var sendPromise = new AWS.SES({ apiVersion: "2010-12-01" })
-                                .sendEmail(params)
-                                .promise();
-                              // Handle promise's fulfilled/rejected states
-                              sendPromise
-                                .then(function (data) {
-                                  console.log(data.MessageId);
-                                })
-                                .catch(function (err) {
-                                  console.error(err, err.stack);
-                                });
+                              // var sendPromise = new AWS.SES({ apiVersion: "2010-12-01" })
+                              //   .sendEmail(params)
+                              //   .promise();
+                              // // Handle promise's fulfilled/rejected states
+                              // sendPromise
+                              //   .then(function (data) {
+                              //     console.log(data.MessageId);
+                              //   })
+                              //   .catch(function (err) {
+                              //     console.error(err, err.stack);
+                              //   });
                             }
                           }
                         })
