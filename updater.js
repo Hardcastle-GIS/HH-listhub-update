@@ -14,7 +14,7 @@ client.connect().then(() => {
 });
 function getListings(urlParam) {
   var date = new Date();
-  date.setHours(date.getHours() - 1);
+  date.setHours(date.getHours() - 24);
   let url;
   if (urlParam) {
     url = urlParam;
