@@ -82,12 +82,12 @@ function writeData(response) {
     getListings(response["@odata.nextLink"]);
   }, 10000);
   if (response.value && response.value.length > 0) {
-    print('total number of records found')
-    print(response.value.length)
+    console.log('total number of records found')
+    console.log(response.value.length)
     response.value.forEach((data) => {
       
       if (data.Longitude && data.Latitude) {
-         print('I am in loooop')
+         console.log('I am in loooop')
         if (data.Media) {
           var mediaUnparsed = JSON.stringify(data.Media);
           var media = mediaUnparsed.replace(/'/g, " ");
