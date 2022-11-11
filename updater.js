@@ -14,13 +14,12 @@ client.connect().then(() => {
 });
 function getListings(urlParam) {
   var date = new Date();
-  date.setHours(date.getHours() - 24);
+  date.setHours(date.getHours() - 1);
   let url;
   if (urlParam) {
     url = urlParam;
   } else {
     url = `https://api.listhub.com/odata/Property?$filter=ModificationTimestamp gt '${date.toISOString()}'&$count=true`;
-    console.log(url)
   }
   (async () => {
     try {
@@ -83,12 +82,8 @@ function writeData(response) {
     getListings(response["@odata.nextLink"]);
   }, 10000);
   if (response.value && response.value.length > 0) {
-    console.log('total number of records found')
-    console.log(response.value.length)
     response.value.forEach((data) => {
-      
       if (data.Longitude && data.Latitude) {
-         console.log('I am in loooop')
         if (data.Media) {
           var mediaUnparsed = JSON.stringify(data.Media);
           var media = mediaUnparsed.replace(/'/g, " ");
